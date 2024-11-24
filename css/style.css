@@ -1,3 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100dvh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 img{
   display: block;
   width: 100%;
@@ -11,6 +24,7 @@ th,td{
 table{
   border-collapse: collapse;
 }
+
 nav{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,31 +33,20 @@ nav{
   padding: 10px 20px;
 }
 
-
-
 form{
   margin-left: auto;
-  margin-right: 0px;
+  margin-right: 0;
 }
 input{
   border-radius: 5px;
-
-}
-
-body,menu{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 main{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 20px;
+  display: flex;
   max-width: 1000px;
-  horiz-align: center;
-  margin: auto;
-  grid-gap: 0 20px;
+  margin: 20px auto;
+  gap: 20px;
+  flex: 1;
 }
 
 h3{
@@ -57,17 +60,20 @@ h3{
 
 nav > h3{
   margin: 0 ;
+  padding: 0 ;
   text-align: left;
 }
 menu,section{
   margin: 0;
 }
 
-
-.menu-container{
+.menu-container {
   padding: 1rem;
   border: 1px solid #000;
-  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: antiquewhite;
 }
 .section-container{
   padding: 1rem;
@@ -85,8 +91,12 @@ menu,section{
 }
 
 footer{
-  vertical-align: bottom;
-  margin: auto;
   padding: 10px;
   background-color: lightgrey;
+}
+menu{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
 }
